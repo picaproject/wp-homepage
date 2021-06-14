@@ -1,2 +1,1 @@
-# wp-homepage
-picaproject.com
+# picaproject.com
