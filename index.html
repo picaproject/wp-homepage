@@ -1,0 +1,878 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+        <title>PicaProject</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="description" content="Template by CocoBasic" />
+        <meta name="keywords" content="HTML, CSS, JavaScript, PHP" />
+        <meta name="author" content="CocoBasic" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <link rel="shortcut icon" href="{% static 'images/limber.ico' %}" />
+        <link href='http://fonts.googleapis.com/css?family=Poppins:100,200,300,400,400i,500,600,700%7CMontserrat:700' rel='stylesheet' type='text/css'>		
+        <link rel="stylesheet" type="text/css"  href="{% static 'style.css' %}" />
+
+        <!--[if lt IE 9]>
+        <script src="{% static 'js/html5shiv.js' %}"></script>
+        <script src="{% static 'js/respond.min.js' %}"></script>
+        <![endif]-->         
+    </head>
+
+    <body class="page-template-onepage">
+
+        <div class="site-wrapper">   
+
+            <div class="doc-loader">
+                <img src="{% static 'images/preloader.gif' %}" alt="Cardea">
+            </div>       
+
+
+            <header class="header-holder">             
+                <div class="menu-wrapper center-relative relative">             
+                    <div class="header-logo">
+                        <a href="{% url 'core:main' %}">
+                            <img src="{% static 'images/logo.png' %}" alt="Cardea">
+                        </a>               
+                    </div>
+
+                    <div class="toggle-holder">
+                        <div id="toggle" class="">
+                            <div class="first-menu-line"></div>
+                            <div class="second-menu-line"></div>
+                            <div class="third-menu-line"></div>
+                        </div>
+                    </div>
+
+                    <div class="menu-holder">
+                        <nav id="header-main-menu">
+                            <ul class="main-menu sm sm-clean">
+                                <li>
+                                    <a href="#home">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#services">Introduction</a>
+                                </li>
+                                <li>
+                                    <a href="#portfolio">Background</a>
+                                </li>
+                                <li>
+                                    <a href="#about">Service</a>
+                                </li>
+                                <li>
+                                    <a href="#news">Ecosystem</a>
+                                </li>
+                                <li>
+                                    <a href="#skills">Matrix</a>
+                                </li>                                
+                                <li>
+                                    <a href="#team">Team</a>
+                                </li>                                
+                                <li>
+                                    <a href="#contact">Marketing</a>
+                                </li>
+                                <li>
+                                    <a href="#roadmap">Roadmap</a>
+                                </li>                                    
+                            </ul>
+                        </nav>                       
+                    </div>
+                    <div class="clear"></div>   
+                </div>
+            </header>                        
+
+
+
+            <div id="content" class="site-content center-relative">
+
+                <!-- Home -->    
+                <div id="home" class="section full-screen full-width">
+                    <div class="section-wrapper block content-1170 center-relative">
+                        <div class="content-wrapper">
+                            <img src="{% static 'images/hello.png' %}" alt="" class="center-relative block" >
+                            <h1 class="big-text center">
+                                Welcome to Pica
+                                <br>
+                                <span class="degree">Welcome to Pica</span>
+                            </h1>
+                            <div class="white-paper-wrap">
+                                <a href="{% url 'core:whitepaper_ko' %}" class="white_btn">
+                                    WHITE-PAPER (KOR)
+                                </a>
+                                <a href="{% url 'core:whitepaper_en' %}" class="white_btn">
+                                    WHITE-PAPER (ENG)
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Services --> 
+                <div id="services" class="section page-split">
+                    <div class="section-wrapper block content-1170 center-relative">
+                        <div class="bg-holder float-left">
+                            <div class="split-color"></div>                                
+                        </div>
+                        <div class="sticky-spacer">
+                            <div class="section-title-holder float-left">
+                                <div class="section-top-image"> 
+                                    <img src="{% static 'images/01_left.png' %}" alt="">
+                                </div>
+                                <h2 class="entry-title">
+                                    PICA <br>
+                                    INTRODUCTION <br>
+                                </h2>
+                            </div>
+                        </div>   
+
+                        <div class="section-content-holder float-right">
+                            <div class="content-wrapper">
+                                <div class="info-text">Pica Art Money <br></div>
+                                <div class="animate font-15">
+                                        Pica Art Money(“PICA”) 토큰은 홍콩에 위치한 PICA HOLDINGS LIMITED에서 발행한 유틸리티
+                                        토큰입니다. PICA토큰은 한국에 위치한 피카프로젝트의 사업 생태계 내에서 결제수단으로 사용
+                                        가능합니다. PICA토큰은 한국 뿐만 아니라 해외 유명작가들의 미술품 공동 소유, 매매, 경매, 전시
+                                        회, 기부 등으로 사용되어 질 수 있습니다.
+                                        피카프로젝트는 송자호 대표와 성해중 대표가 함께 뜻을 모아 설립되었습니다. 공동 소유 기법을
+                                        통해 고가의 미술품 투자에 접근이 용이하도록 IT기술을 활용하여 누구나 쉽게 미술품 소비에 참여
+                                        할 수 있도록 기회를 제공하겠습니다. 미술품 소유의 대중화 선도를 목표로 미술시장의 선진화를
+                                        도모할 것입니다.
+                                        또한 대중과 예술을 이어주는 다양한 주제의 전시 컨텐츠를 기획하고, 유망한 작가들을 발굴하여
+                                        세계 미술 시장 진출을 주도하고, 현대 미술의 흐름에 영향력을 가지고자 합니다.
+                                </div>
+                                
+                                <div class="clear"></div>
+                            </div>                                                           
+                        </div>                                
+                        <div class="clear"></div> 
+                    </div>
+                </div>
+
+                <!-- Portfolio --> 
+                <div id="portfolio" class="section page-split">
+                    <div class="section-wrapper block content-1170 center-relative">
+                        <div class="bg-holder float-left">
+                            <div class="split-color"></div>                                   
+                        </div>
+                        <div class="sticky-spacer">
+                            <div class="section-title-holder float-left portfolio-title-fix-class">
+                                <div class="section-top-image"> 
+                                    <img src="{% static 'images/02_left.png' %}" alt="">
+                                </div>
+                                <h2 class="entry-title"> 
+                                    PICA <br>
+                                    BACKGROUND<br>
+                                </h2>
+                            </div>
+                        </div>
+
+                        <div class="section-content-holder float-right">
+                            <div class="content-wrapper">
+                                <div class="info-text">Pica Background <br></div>
+                                <div class="animate font-15">
+                                    기존의 미술계 산업은 일반 대중들이 접하기 어렵고, 고가의 미술품은 더더욱 접하기가 어렵습니다.
+                                    일반 대중들에게 미술품은 자산가들의 전유물로 여겨지고, 불법 거래나 탈세 등의 안 좋은 인식들이 있
+                                    습니다. 고가의 미술품 소유는 일반인들에게는 단지 희망이고 꿈같은 얘기였습니다. 피카프로젝트는
+                                    누구나 소액으로 미술품 구매에 참여할 수 있게 하여, 일반 대중들도 소액으로 자신의 미술품을 소유할
+                                    수 있게 되었습니다.
+                                    뿐만 아니라, 미술품 전시나 홍보는 일부의 유명작가들의 몫이었는데, 피카프로젝트의 플랫폼을 통해
+                                    서 무명의 작가나 시장에서 아직 알려지지 않은 미술품들을 일반 대중들에게 알릴 수 있습니다.
+                                    <br>
+                                    <br>
+                                    <img src="{% static 'images/pica_background.png' %}" alt="">
+                                    <br>
+                                    <br>
+                                    경제규모가 커지고 타산업의 규모가 커질수록 미술품 시장도 계속 커져 나갑니다. 한국 뿐만 아니라
+                                    전세계적으로 미술품 시장의 규모는 커지고 거래건수 및 거래대금도 지속적으로 상승하고 있습니다.
+                                    하지만, 아직도 미술품에 대한 복제, 사기 문제가 계속 생기고 불투명한 유통과정으로 대내외적으로
+                                    미술품 거래의 신뢰도가 떨어지는 경우가 있습니다. 피카프로젝트는 블록체인 기술을 통해서 유통과
+                                    정을 해쉬값으로 블록체인 데이터베이스 내에 저장하거나 미술품 작가 스스로가 진품임을 인정하고
+                                    이를 영구, 불변하게 저장할 수 있습니다.
+                                    피카프로젝트는 PICA토큰의 생태계를 통해서 전세계적으로 커져가는 미술품 시장에 발 맞춰 나가고,
+                                    현재의 미술품 시장과 미술품 거래의 문제를 해결해 나갈 것입니다.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>                                
+                    </div>                            
+                </div>
+
+                <!-- Inspire -->
+                <div id="inspire" class="section full-screen full-width">
+                    <div class="section-wrapper block content-1170 center-relative">
+                        <div class="content-wrapper">
+                            <script>
+                                var slider1_speed = "6000";
+                                var slider1_auto = "true";
+                                var slider1_hover = "true";                                
+                            </script>
+                            <div class="image-slider-wrapper relative">
+                                <div id="slider1" class="owl-carousel owl-theme image-slider slider">
+                                    <div class="owl-item">
+                                        <a  class="scroll">
+                                            <img src="{% static 'images/img_022.png' %}" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="owl-item">
+                                        <a  class="scroll">
+                                            <img src="{% static 'images/img_023.png' %}" alt="">
+                                        </a>
+                                    </div>
+                                </div>                                                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- About -->
+                <div id="about" class="section page-split">
+                    <div class="section-wrapper block content-1170 center-relative">
+                        <div class="bg-holder float-right">
+                            <div class="split-color"></div>                                    
+                        </div>
+                        <div class="sticky-spacer">
+                            <div class="section-title-holder float-right">
+                                <div class="section-top-image">
+                                    <img src="{% static 'images/03_right.png' %}" alt="">
+                                </div>
+                                <h2 class="entry-title"> 
+                                    PICA <br>
+                                    PROJECT <br>
+                                    SERVICE
+                                </h2>
+                            </div>
+                        </div>
+
+                        <div class="section-content-holder float-left">
+                            <div class="content-wrapper">
+                                <div class="service_wrap_01">
+                                    <div class="info-text">
+                                         - 미술품 유통이력 관리 및 위변조 방지
+                                    </div>
+                                    <img src="{% static 'images/service_01.png' %}" alt="">
+                                    <div class="">
+                                        <p>
+                                            <strong class="font-15"> 
+                                                현재 미술품 시장에서는 사기나 위변조의 문제가 지속적으로 발생하고 있고, 미술품 유통과정에
+                                                서 탈세나 범죄자금 은닉들의 문제 또한 생겨서 미술품 거래에 대한 대중들의 인식이 안 좋아지고
+                                                당사자간의 신뢰를 떨어뜨리고 있습니다. 피카프로젝트의 플랫폼에서는 미술품 유통 시에 유통에
+                                                대한 정보를 블록체인 서버에 Hash값으로 저장해서 영구, 불변하게 저장할 수 있습니다.
+                                            </strong>
+                                        </p>
+
+                                        <div class="img">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service_wrap_02">
+                                    <div class="info-text">
+                                        - 미술품 공동 구매 및 판매
+                                    </div>
+                                    <img src="{% static 'images/service_02.png' %}" alt="">
+                                    <div class="">
+                                        <p>
+                                            <strong class="font-15">
+                                                피카프로젝트는 공동구매 플랫폼을 통해서 일반인들이 소액으로도 미술품 소유자가 될 수 있는 길을
+                                                열었습니다. 참여자들은 피카프로젝트 플랫폼을 통해서 소액으로 미술품 구매에 참여할 수 있습니
+                                                다. 참여자들은 구매에 참여하여 미술품 일정부분에 대해서 소유권을 가지게 되며, 이 소유권은 블
+                                                록체인 서버에 저장됩니다. 또한 참여자들은 PICA토큰을 통해서 미술품 구매에 참여할 수도 있습
+                                                니다
+                                            </strong>
+                                        </p>
+
+                                        <div class="img">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service_wrap_03">
+                                    <div class="info-text">
+                                        - 미술품 거래 및 경매 입찰
+                                    </div>
+                                    <img src="{% static 'images/service_03.png' %}" alt="">
+                                    <div class="">
+                                        <p>
+                                            <strong class="font-15"> 
+                                                PICA토큰을 이용하면 환전, 외환거래 문제를 해결할 수 있고, 해외송금을 손쉽게 할 수 있습니다.
+                                                PICA토큰을 글로벌거래소에 상장하고 전세계의 이용자들이 구매하고 판매할 수 있게 하여, 국가
+                                                간 글로벌 거래에 사용할 수 있습니다.
+                                            </strong>
+                                        </p>
+                                        <p>&nbsp;</p>
+                                        <div class="img">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service_wrap_04">
+                                    <div class="info-text">
+                                        - 오프라인, 온라인 전시회
+                                    </div>
+                                    <img src="{% static 'images/service_04.png' %}" alt="">
+                                    <div class="">
+                                        <p>
+                                            <strong class="font-15">
+                                                전시회는 오프라인 뿐만 아니라 피카프로젝트 플랫폼을 통한 온라인으로도 진행됩니다. 
+                                                대중들에게 많이 공개되지 않았던 무명 작가들의 미술품도 꾸준히 전시회 참여기회를 부여하여 무명 
+                                                작가들에게 데뷔와 홍보의 기회를 줄 수 있습니다. 
+                                                전시회의 입장료와 굿즈판매는 모두 PICA토큰으로 결제할 수있습니다.
+                                            </strong>
+                                        </p>
+                                        <p>&nbsp;</p>
+                                        <div class="img">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service_wrap_04">
+                                    <div class="info-text">
+                                        - 기부 및 문화 봉사활동
+                                    </div>
+                                    <img src="{% static 'images/service_05.png' %}" alt="">
+                                    <div class="">
+                                        <p>
+                                            <strong class="font-15">
+                                                피카프로젝트의 모든 활동에 따른 수입의 일정부분은 기부됩니다. 피카프로젝트 플랫폼을 통한
+                                                매각이나 경매에 대한 수입금 중 10%는 기부로 쓰여집니다. 뿐만 아니라, 전체 발행된 PICA토큰
+                                                중 5% 또한 기부활동 명목으로 사용되어집니다.
+                                                위 내용들은 피카프로젝트 홈페이지 등을 통해서 투명하게 공개됩니다.
+
+                                            </strong>
+                                        </p>
+                                        <p>&nbsp;</p>
+                                        <div class="img">
+                                            <img src="" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="clear"></div>                                       
+                            </div>                                   
+                        </div>
+                        <div class="clear"></div>                                
+                    </div>                            
+                </div>
+
+
+                <!-- News -->
+                <div id="news" class="section page-split">
+                    <div class="section-wrapper block content-1170 center-relative">
+                        <div class="bg-holder float-right">
+                            <div class="split-color"></div>                                    
+                        </div>
+                        <div class="sticky-spacer">
+                            <div class="section-title-holder float-right">
+                                <div class="section-top-image">
+                                    <img src="{% static 'images/04_right.png' %}" alt="">
+                                </div>
+                                <h2 class="entry-title"> 
+                                    PICA<br>
+                                    ECOSYSTEM
+                                </h2>
+                            </div>
+                        </div>
+
+                        <div class="section-content-holder float-left">
+                            <div class="content-wrapper">
+                                <div class="blog-holder-scode latest-posts-scode block center-relative">
+                                    <article class="relative blog-item-holder-scode">
+                                        <h4 class="entry-title">
+                                            -미술품 공동구매
+                                        </h4>
+                                    </article>
+
+                                    <article class="relative blog-item-holder-scode">
+                                        <h4 class="entry-title">
+                                            -미술품 거래
+                                        </h4>
+                                    </article>
+
+                                    <article class="relative blog-item-holder-scode">
+                                        <h4 class="entry-title">
+                                            -미술품 경매
+                                        </h4>
+                                    </article>
+
+                                    <article class="relative blog-item-holder-scode">
+                                        <h4 class="entry-title">
+                                            -굿즈 판매
+                                        </h4>
+                                    </article>
+                                    <article class="relative blog-item-holder-scode">
+                                        <h4 class="entry-title">
+                                            -기부
+                                        </h4>
+                                    </article>
+                                    <article class="relative blog-item-holder-scode">
+                                        <h4 class="entry-title">
+                                            -문화활동
+                                        </h4>
+                                    </article>
+                                    <article class="relative blog-item-holder-scode">
+                                        <h4 class="entry-title">
+                                            -봉사활동
+                                        </h4>
+                                    </article>
+                                    <article class="relative blog-item-holder-scode">
+                                        <h4 class="entry-title">
+                                            -전시회
+                                        </h4>
+                                    </article>
+                                    <div class="clear"></div>                                            
+                                </div>                                       
+                            </div>                                    
+                        </div>
+                        <div class="clear"></div>                              
+                    </div>                            
+                </div>
+
+                <!-- Skills -->
+                <div id="skills" class="section page-split">
+                    <div class="section-wrapper block content-1170 center-relative">
+                        <div class="bg-holder float-left">
+                            <div class="split-color"></div>                               
+                        </div>
+                        <div class="sticky-spacer">
+                            <div class="section-title-holder float-left">
+                                <div class="section-top-image"> 
+                                    <img src="{% static 'images/05_left.png' %}" alt="">
+                                </div>
+                                <h2 class="entry-title"> 
+                                    PICA <br>
+                                    MATRIX<br>
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="section-content-holder float-right">
+                            <div class="content-wrapper">
+                                <div class="info-text">
+                                    PICA Token Allocation <br> 
+                                    발행량: 1,000,000,000 PICA
+                                </div>
+                                <div class="text font-15">
+                                    세일용 물량에 대한 판매금액은 피카프로젝트의 사무실 임대료, 인건비, 미술품 보관유지비용, 전시
+                                    장 대관 비용, 블록체인 서버 비용 등의 사업비용으로 사용되어 집니다. <br>
+                                    - 생태계 조성용 물량은 미술품 구매, 작가 섭외 등의 PICA생태계 비용 뿐만 아니라 작가들을 구성하
+                                    는데 사용되어 집니다. <br>
+                                    - 프로젝트팀용 물량은 가격 안정화 및 유통량 관리를 위해서 초기 거래소 상장 이후, 6개월간 락업 상
+                                    태입니다. 그 이후에는 기 상장된 거래소와 상의해서 유통량을 조정할 예정입니다. <br>
+                                    - 마케팅용 물량은 SNS인플루언서 제공, 에어드랍(Airdrop), AMA Bonus, 마케팅 업체 제공 등으로
+                                    사용되어질 예정입니다. <br>
+                                    - 상장 및 리저브용 물량은 상장Fee로 사용되어지고, 해킹이나 긴급상황에서 본 물량이 사용되어질
+                                    예정입니다. <br>
+                                    - 기부용 물량은 PICA 토큰 자체 또는 거래소를 통해서 판매된 금액으로 문화예술재단 등에 전달되어
+                                    집니다. <br>
+                                    ** PICA토큰 분배에 관한 PICA 매트릭스는 피카프로젝트의 사업 및 프로젝트 진행사항에 따라서 변동될 수
+                                    있으며 회사에서는 이를 투자자나 홀더에게 고지할 의무가 없습니다. 따라서 이를 투자의 판단 요소로 사용
+                                    되어질 수 없습니다.
+                                </div>
+                                <div class="skills-holder">
+                                    <div class="skill-holder">
+                                        <div class="skill-percent color-01">30%</div>
+                                        <div class="skill-text">
+                                            <span class="color-01">세일</span>
+                                            <div class="skill">
+                                                <div class="skill-fill fill-01" data-fill="30%"></div>                                                    
+                                            </div>                                               
+                                        </div>                                            
+                                    </div>
+
+                                    <div class="skill-holder">
+                                        <div class="skill-percent color-02">30%</div>
+                                        <div class="skill-text">
+                                            <span class="color-02">생태계</span>
+                                            <div class="skill">
+                                                <div class="skill-fill fill-02" data-fill="30%"></div>                                                   
+                                            </div>                                               
+                                        </div>                                            
+                                    </div>
+
+                                    <div class="skill-holder">
+                                        <div class="skill-percent color-03">20%</div>
+                                        <div class="skill-text">
+                                            <span class="color-03">프로젝트팀</span>
+                                            <div class="skill">
+                                                <div class="skill-fill fill-03" data-fill="20%"></div>                                                   
+                                            </div>                                                
+                                        </div>                                            
+                                    </div>
+
+                                    <div class="skill-holder">
+                                        <div class="skill-percent color-04">10%</div>
+                                        <div class="skill-text">
+                                            <span class="color-04">마케팅</span>
+                                            <div class="skill">
+                                                <div class="skill-fill fill-04" data-fill="10%"></div>                                                   
+                                            </div>                                                
+                                        </div>                                            
+                                    </div>
+
+                                    <div class="skill-holder">
+                                        <div class="skill-percent color-05">5%</div>
+                                        <div class="skill-text">
+                                            <span class="color-05">상장 및 리저브</span>
+                                            <div class="skill">
+                                                <div class="skill-fill fill-05" data-fill="5%"></div>                                                    
+                                            </div>                                                
+                                        </div>                                            
+                                    </div>
+                                    
+                                    <div class="skill-holder">
+                                        <div class="skill-percent color-06">5%</div>
+                                        <div class="skill-text">
+                                            <span class="color-06">기부</span>
+                                            <div class="skill">
+                                                <div class="skill-fill fill-06" data-fill="5%"></div>                                                    
+                                            </div>                                                
+                                        </div>                                            
+                                    </div>    
+                                </div>                                    
+                            </div>                                
+                        </div>
+                        <div class="clear"></div>                            
+                    </div>                        
+                </div>
+
+                <!-- Team -->
+                <div id="team" class="section page-split">
+                    <div class="section-wrapper block content-1170 center-relative">
+                        <div class="bg-holder float-left">
+                            <div class="split-color"></div>                                
+                        </div>
+                        <div class="sticky-spacer">
+                            <div class="section-title-holder float-left">
+                                <div class="section-top-image"> 
+                                    <img src="{% static 'images/06_left.png' %}" alt="">
+                                </div>
+                                <h2 class="entry-title"> 
+                                    PICA <br>
+                                    TEAM <br>
+                                </h2>
+                            </div>
+                        </div>
+
+                        <div class="section-content-holder float-right">
+                            <div class="content-wrapper">
+                                <div id="team-holder">
+                                    <div class="team-load-content-holder"></div>
+                                    <ul class="member-holder-wrapper">
+
+                                        <li id="team-member-1" class="member-holder one_half">
+                                            <a class="img-link ajax-member-content"  data-id="1">
+                                                <img class="attachment-post-thumbnail" src="{% static 'images/team_01_large.jpg' %}" alt="">
+                                                <div class="text_wrap">
+                                                    <p class="member-name">송자호</p>
+                                                    <p class="member-name">CO-FOUNDER, CEO</p>
+                                                    <p class="member-position">현) 피카프로젝트 공동대표이사</p>
+                                                    <p class="member-position">현) 한국공유경제진흥원 예술분과 위원장</p>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li id="team-member-2" class="member-holder one_half">
+                                            <a class="img-link ajax-member-content"  data-id="2">
+                                                <img class="attachment-post-thumbnail" src="{% static 'images/team_02_large.jpg' %}" alt="" >
+                                                <div class="text_wrap">
+                                                    <p class="member-name">성해중</p>
+                                                    <p class="member-name">CO-FOUNDER, CEO</p>
+                                                    <p class="member-position">현) 피카프로젝트 공동대표 이사</p>
+                                                    <p class="member-position">현) (주)에프엑스 컨설팅 대표이사</p>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li id="team-member-3" class="member-holder one_half">
+                                            <a class="img-link ajax-member-content"  data-id="3">
+                                                <img class="attachment-post-thumbnail" src="{% static 'images/team_03_large.jpg' %}" alt="" >
+                                                <div class="text_wrap">
+                                                    <p class="member-name">최고운</p>
+                                                    <p class="member-name">Senior Curator</p>
+                                                    <p class="member-position">현) 피카프로젝트 선임큐레이터</p>
+                                                    <p class="member-position">현) 여성신문 칼럼니스트</p>
+                                                    <p class="member-position">전) 갤러리 학고재 큐레이터</p>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li id="team-member-4" class="member-holder one_half">
+                                            <a class="img-link ajax-member-content" data-id="4">
+                                                <img class="attachment-post-thumbnail" src="{% static 'images/team_04_large.jpg' %}" alt="" >
+                                                <div class="text_wrap">
+                                                    <p class="member-name">박규리</p>
+                                                    <p class="member-name">Curator</p>
+                                                    <p class="member-position">현) 피카프로젝트 최고 홍보 책임자</p>
+                                                    <p class="member-position">현) 피카프로젝트 큐레이터</p>
+                                                    <p class="member-position">전) 걸그룹 카라 멤버</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="clear"></div>                                        
+                                </div>                                    
+                            </div>                                
+                        </div>
+                        <div class="clear"></div>                           
+                    </div>                        
+                </div>
+
+
+                <!-- Clients -->
+                <div id="clients" class="section full-width">
+                    <div class="section-wrapper block content-1170 center-relative">
+                        <div class="content-wrapper">
+                        </div>
+                        <div class="clear"></div>                           
+                    </div>                        
+                </div>
+
+                <!-- Contact -->
+                <div id="contact" class="section page-split">
+                    <div class="section-wrapper block content-1170 center-relative">
+                        <div class="bg-holder float-left">
+                            <div class="split-color"></div>                               
+                        </div>
+                        <div class="sticky-spacer">
+                            <div class="section-title-holder float-left">
+                                <div class="section-top-image"> 
+                                    <img src="{% static 'images/07_left.png' %}" alt="">
+                                </div>
+                                <h2 class="entry-title"> 
+                                    PICA <br>
+                                    MARKETING <br>
+                                </h2>
+                            </div>
+                        </div>
+
+                        <div class="section-content-holder float-right">
+                            <div class="content-wrapper">
+                                <img src="{% static 'images/marketing_01.png' %}" alt="">
+                                <br>
+                                <img src="{% static 'images/marketing_02.png' %}" alt="">
+                                <div class="clear"></div>                                   
+                            </div>                                
+                        </div>
+                        <div class="clear"></div>                            
+                    </div>                        
+                </div>
+
+                <!-- Contact -->
+                <div id="roadmap" class="section page-split">
+                    <div class="section-wrapper block content-1170 center-relative">
+                        <div class="bg-holder float-left">
+                            <div class="split-color"></div>                               
+                        </div>
+                        <div class="sticky-spacer">
+                            <div class="section-title-holder float-left">
+                                <div class="section-top-image"> 
+                                    <img src="{% static 'images/08_left.png' %}" alt="">
+                                </div>
+                                <h2 class="entry-title"> 
+                                    PICA <br>
+                                    ROADMAP <br>
+                                </h2>
+
+                            </div>
+                        </div>
+
+                        <div class="section-content-holder float-right">
+                            <div class="content-wrapper">
+                                <div class="blog-holder-scode latest-posts-scode block center-relative blog-holder-scode-sep">
+                                    <article class="relative blog-item-holder-scode">
+                                        <div class="entry-date published road-map-01">2018</div>
+                                        <div class="cat-links">
+                                            <ul>
+                                                <li>
+                                                    <a  class="road-map-01">The second half of year</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="excerpt">
+                                            피카프로젝트 런칭
+                                        </div>
+                                    </article>
+
+                                    <article class="relative blog-item-holder-scode">
+                                        <div class="entry-date published road-map-01">2018</div>
+                                        <div class="cat-links">
+                                            <ul>
+                                                <li>
+                                                    <a  class="road-map-01">The first half of year</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="excerpt">
+                                            온라인 미술품거래 플랫폼 프로젝트 계획 수립<br>
+                                            피카프로젝트 사업계획서 발행
+                                        </div>
+                                    </article>
+
+                                    <article class="relative blog-item-holder-scode">
+                                        <div class="entry-date published road-map-02">2019</div>
+                                        <div class="cat-links">
+                                            <ul>
+                                                <li>
+                                                    <a class="road-map-02">The second half</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="excerpt">
+                                            미술작품 빅데이터 수집<br>
+                                            미술작품 공동구매 관련 빅데이터 수집<br>
+                                            슈퍼스타 존버거맨 전시 기획 및 전략적 투자
+                                        </div>
+                                    </article>
+
+                                    <article class="relative blog-item-holder-scode">
+                                        <div class="entry-date published road-map-03">2020</div>
+                                        <div class="cat-links">
+                                            <ul>
+                                                <li>
+                                                    <a  class="road-map-03">The first half of year</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="excerpt">
+                                            피카프로젝트 온라인 플랫폼 개발<br>
+                                            피카프로젝트 SNS 및 각종 채널 개설<br>
+                                            피카프로젝트, 피카갤러리 공식 런칭<br>
+                                            피카 아트머니 런칭 계획 수립<br>
+                                            8억원 규모의 첫번째 공동구매 프로젝트 완판
+                                        </div>
+                                    </article>
+
+                                    <article class="relative blog-item-holder-scode">
+                                        <div class="entry-date published road-map-03">2020</div>
+                                        <div class="cat-links">
+                                            <ul>
+                                                <li>
+                                                    <a  class="road-map-03">The second half</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="excerpt">
+                                            G:9 대중문화예술인 9인과 함께하는 전시회 총괄 기획<br>
+                                            3번째, 4번째 공동구매 프로젝트 런칭 및 완판<br>
+                                            팝업 갤러리카페 ‘피카엑스랩’ 강남역점 공식 오픈<br>
+                                            기획재정부 소관 한국공유경제진흥원 우수 기업 선정<br>
+                                            해운대 2호점 피카프로젝트 미술관 설립 – 깔롱 드 팝아트 전시회 총괄 기획<br>
+                                            ‘아트,하트,화투 그리고 조영남’ 전시회 총괄기획 (피카프로젝트청담본점)<br>
+                                            Pica Art Money(PICA) 백서 발행<br>
+                                            Pica Art Money(PICA) 토큰 발행<br>
+                                            Pica Art Money(PICA) 토큰 국내 거래소 상장 예정
+                                        </div>
+                                    </article>
+
+                                    <article class="relative blog-item-holder-scode">
+                                        <div class="entry-date published road-map-04">2021</div>
+                                        <div class="cat-links">
+                                            <ul>
+                                                <li>
+                                                    <a  class="road-map-04">The first half of year</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="excerpt">
+                                            피카프로젝트 대규모 아트센터 서울에 설립<br>
+                                            Pica Art Money(PICA) 토큰 공동구매 프로젝트 진행<br>
+                                            국내 대표 아티스트의 기획전 진행
+                                        </div>
+                                    </article>
+
+                                    <article class="relative blog-item-holder-scode">
+                                        <div class="entry-date published road-map-04">2021</div>
+                                        <div class="cat-links">
+                                            <ul>
+                                                <li>
+                                                    <a  class="road-map-04">The second half</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="excerpt">
+                                            미술품 옥션 시스템 런칭 / 옥션 회사 인수<br>
+                                            블록체인 경매 시스템 출시<br>
+                                            오프라인 굿즈 샵, 아트상품 편집 샵 오픈 등 생태계 확장<br>
+                                            아티스트 매니지먼트 진행<br>
+                                            AI기반 아티스트 저작물 판권 관리
+                                        </div>
+                                    </article>
+
+                                    <article class="relative blog-item-holder-scode">
+                                        <div class="entry-date published road-map-05">2022</div>
+                                        <div class="cat-links">
+                                            <ul>
+                                                <li>
+                                                    <a  class="road-map-05">The first half of year</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="excerpt">
+                                            복합문화예술공간 피카아트랜드 코리아 및 해외지점 설립<br>
+                                            여행사 연계 국내외 피카 아트 투어 런칭<br>
+                                            AI기반 미디어아트쇼 기획<br>
+                                            피카프로젝트 국내외 기관투자 유치
+                                        </div>
+                                    </article>
+
+                                    <article class="relative blog-item-holder-scode">
+                                        <div class="entry-date published road-map-05">2022</div>
+                                        <div class="cat-links">
+                                            <ul>
+                                                <li>
+                                                    <a  class="road-map-05">The second half</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="excerpt">
+                                            해외 유명 아티스트 단독 국내 전시 및 이벤트 런칭<br>
+                                            Pica Art Money(PICA) 토큰 글로벌 거래소 상장<br>
+                                            피카프로젝트 국내외 IPO 계획수립
+                                        </div>
+                                    </article>
+                                    <div class="clear"></div>                                            
+                                </div>                                       
+                            </div>                               
+                        </div>
+                        <div class="clear"></div>                            
+                    </div>                        
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="footer-content center-relative">
+                    <div class="footer-mail">
+                        <a>info@picaproject.co.kr</a>
+                    </div>
+                    <div class="footer-number">
+                        <a>02-543-6001</a>
+                    </div>
+                    <div class="footer-info">
+                        법인명 : 주식회사 피카프로젝트 <br>
+                        대표자 : 성해중, 송자호 <br>
+                        사업자번호 : 875-87-01535 <br> 
+                        경기도 안양시 동안구 벌말로 126, 2115호 <br> 
+                        (관양동, 평촌 오비즈타워) <br> 
+                    </div>
+                    <div class="copyright-holder"> 
+                        © Copyright 2020 PICA PROJECT. All rights reserved.
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!--Load JavaScript-->
+        <script src="{% static 'js/jquery.js' %}"></script>			                                       
+        <script src="{% static 'js/jquery.sticky.js' %}"></script>			                                       
+        <script src='{% static 'js/imagesloaded.pkgd.js' %}'></script>                
+        <script src='{% static 'js/jquery.fitvids.js' %}'></script>                
+        <script src='{% static 'js/jquery.smartmenus.min.js' %}'></script>                                 
+        <script src='{% static 'js/isotope.pkgd.js' %}'></script>                                 
+        <script src='{% static 'js/jquery.easing.1.3.js' %}'></script>                                                       
+        <script src='{% static 'js/jquery.prettyPhoto.js' %}'></script>                                                         
+        <script src='{% static 'js/owl.carousel.min.js' %}'></script>                          
+        <script src='{% static 'js/jquery.sticky-kit.min.js' %}'></script>                          
+        <script src='{% static 'js/main.js' %}'></script>
+    </body>
+</html>
